@@ -11,12 +11,24 @@ WORKDIR /app
 # ensures that the python output is sent to the terminal without buffering
 ENV PYTHONUNBUFFERED=TRUE
 
+# Set the working directory to /app
+WORKDIR /app
+
+# ensures that the python output is sent to the terminal without buffering
+ENV PYTHONUNBUFFERED=TRUE
+
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-# Install the required libraries
-RUN pip --no-cache-dir install --upgrade pip &&\
-    pip --no-cache-dir install -r /app/requirements.txt
+# upgrade pip
+RUN pip --no-cache-dir install --upgrade pip
+
+# install pipenv
+RUN pip install pipenv
+
+# pip install
+RUN pipenv install --deploy --system && \
+    rm -rf /root/.cache
 
 # Make port 8888 available to the world outside this container
 EXPOSE 8888
@@ -26,4 +38,6 @@ VOLUME /app
 
 # Run jupyter when container launches
 CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
+
+
 
