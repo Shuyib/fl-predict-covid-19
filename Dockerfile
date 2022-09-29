@@ -15,7 +15,8 @@ ENV PYTHONUNBUFFERED=TRUE
 COPY . /app
 
 # Install the required libraries
-RUN pip --no-cache-dir install -r /app/requirements.txt
+RUN pip --no-cache-dir install --upgrade pip &&\
+    pip --no-cache-dir install -r /app/requirements.txt
 
 # Make port 8888 available to the world outside this container
 EXPOSE 8888
