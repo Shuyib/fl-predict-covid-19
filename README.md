@@ -4,8 +4,8 @@ manning.com liveproject. It is in 3 parts to [make a personalized prediction whe
 ## Part 1: Federated Learning: Handling Sensitive Data  
 
 * [x] read and visualize data   
-* [] extract features and labels from individuals  
-* [] apply logistic regression and decision trees
+* [x] extract features and labels from individuals  
+* [x] apply logistic regression and decision trees
 
 ## Part 2: Federated Learning: Build Network Models for Pandemics  
 
