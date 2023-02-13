@@ -6,6 +6,9 @@ Using data from an [application](https://covid-19-sounds.org/en/) & reference th
 
 The features are obtained from the Fourier transform of an audio recording of an individual. The predictor map outputs an estimate or guess for the Covid-19 infection status of individuals. The output is “+1” if the individual is likely to have a Covid-19 infection, otherwise the predictor map outputs "-1".
 
+In addition to this, another dataset on contact tracing that is, a recording of how people have been interracting with each other looking into where and when people interacted as well as their covid19 status. This is simulated data given the nature of the rows from first glimpse of the datasets provided.
+
 
 Solution:
 Try automatically diagnose COVID-19 by analyzing audio recordings of coughs.
+Represent contact networks and relevant attributes of individuals
