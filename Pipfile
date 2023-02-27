@@ -11,6 +11,7 @@ matplotlib = "*"
 sklearn = "*"
 ipympl = "*"
 pillow = "==9.3.0"
+networkx = "*"
 
 [dev-packages]
 
