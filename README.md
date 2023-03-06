@@ -9,8 +9,8 @@ manning.com liveproject. It is in 3 parts to [make a personalized prediction whe
 
 ## Part 2: Federated Learning: Build Network Models for Pandemics  
 
-* [] Build a contact network
-* [] Compute Infection rates
+* [x] Build a contact network
+* [x] Compute Infection rates
 
 
 ## Part 3: Federated Learning: Personalized Diagnosis of Symptoms   
