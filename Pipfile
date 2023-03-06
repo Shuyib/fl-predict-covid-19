@@ -12,6 +12,7 @@ sklearn = "*"
 ipympl = "*"
 pillow = "==9.3.0"
 networkx = "*"
+geopy = "*"
 
 [dev-packages]
 
