@@ -15,8 +15,8 @@ manning.com liveproject. It is in 3 parts to [make a personalized prediction whe
 
 ## Part 3: Federated Learning: Personalized Diagnosis of Symptoms   
 
-* [] Create a graph based iterative machine learning model  
-* [] Make Federated Learning Workflow   
+* [x] Create a graph based iterative machine learning model  
+* [x] Make Federated Learning Workflow   
 
 ## File structure  
 
