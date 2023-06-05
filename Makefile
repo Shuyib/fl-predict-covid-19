@@ -35,9 +35,9 @@ test: virtualenv format lint
 
 build: Dockerfile
 	#build container
-	docker build -t fl-predict-covid-19 .
+	sudo docker build -t fl-predict-covid-19 .
 run: Dockerfile build
 	#run docker
-	docker run -p 8888:8888 fl-predict-covid-19
+	sudo docker run -p 8888:8888 fl-predict-covid-19
 
 all: install format lint test build run
